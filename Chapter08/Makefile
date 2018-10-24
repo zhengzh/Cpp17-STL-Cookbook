@@ -1,4 +1,4 @@
-
+CXX = g++-7
 CXXFLAGS = -std=c++1z -Wall
 
 SOURCES=$(wildcard *.cpp)
