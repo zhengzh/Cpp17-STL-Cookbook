@@ -11,7 +11,7 @@ class addable
 public:
     addable(T v) : val{v} {}
 
-#if 0
+#if 1
     // The C++11 way
     template <typename U>
     std::enable_if_t<!std::is_same<T, std::vector<U>>::value, T>

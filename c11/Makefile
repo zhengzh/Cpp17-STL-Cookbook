@@ -1,6 +1,6 @@
 CXX = /home/zh/shengyi/build/bin/zapcc++
 # CXX = g++
-CXXFLAGS = -std=c++11 -Wall
+CXXFLAGS = -std=c++17 -Wall
 
 SOURCES=$(wildcard *.cpp)
 BINARIES=$(patsubst %.cpp,bin/%,$(SOURCES))

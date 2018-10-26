@@ -45,6 +45,10 @@
         "type_traits": "cpp",
         "tuple": "cpp",
         "typeinfo": "cpp",
-        "utility": "cpp"
+        "utility": "cpp",
+        "memory": "cpp",
+        "numeric": "cpp",
+        "functional": "cpp",
+        "bitset": "cpp"
     }
 }
