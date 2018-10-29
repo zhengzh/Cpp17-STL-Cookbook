@@ -7,6 +7,6 @@ namespace std {
 }
 
 int main() {
-    std::pair<int, int> 
+    // std::pair<int, int> 
     return 0;
 }
