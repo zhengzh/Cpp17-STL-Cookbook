@@ -3,10 +3,12 @@
 
 int main()
 {
-    auto just_one ( [](){ return 1; } );
+    auto just_one { [](){ return 1; } };
     auto just_two ( []  { return 2; } );
 
     std::cout << just_one() << ", " << just_two() << '\n';
+
+    auto z = {1, 2, 3};
 
 
     auto plus ( [](auto l, auto r) { return l + r; } );
@@ -25,7 +27,7 @@ int main()
     std::cout << '\n';
 
 
-    int a {0};
+    auto a {0};
     auto incrementer ( [&a] { ++a; } );
 
     incrementer();

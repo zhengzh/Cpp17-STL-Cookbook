@@ -18,6 +18,9 @@ auto f() -> std::pair<decltype(n), decltype(n)> // auto can't deduce from brace-
     return {n, n};
 }
 
+
+auto g = [](auto a, auto b) {return a + b;};
+
 int main()
 {
     auto a = 1 + 2;            // type of a is int
@@ -29,7 +32,7 @@ int main()
     decltype(auto) c2 = (a); // type of c2 is int&, an alias of a
     std::cout << "a, before modification through c2 = " << a << '\n';
     ++c2;
-    std::cout << "a, after modification through c2 = " << a << '\n';
+    std::cout << "a, after modification through c2 = " << g(2, 3) << '\n';
  
     auto [v, w] = f<0>(); //structured binding declaration
  
