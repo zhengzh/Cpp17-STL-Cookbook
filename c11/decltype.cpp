@@ -31,6 +31,11 @@ make_foo(T&& t)
     return { std::forward<T>(t) };
 }
 
+void f(int&& i) {
+  auto lambda = [](int&& j) { (void)j; };
+  lambda(std::move(i));
+}
+
 int main()
 {
    struct A { int i = 0 ; int& value() { return i ; }; auto g(int a, int b){return a+b;};} a;
